@@ -1,7 +1,7 @@
 esp0= 8.85*10^-12; k=1/(4*pi*esp0);
 q1=9*10^-9;
 syms x y z;
-qx=0;
+qx=1;
 qy=0;
 qz=0;
 E=@(x,y,z) k*q1/((x-qx)^2 +(y-qy)^2 +(z-qz)^2)^(3/2)*[x-qx, y-qy, z-qz];
