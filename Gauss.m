@@ -1,9 +1,9 @@
 esp0= 8.85*10^-12; k=1/(4*pi*esp0);
 q1=9*10^-9;
 syms x y z;
-qx=2;
-qy=2;
-qz=2;
+qx=0;
+qy=1;
+qz=0;
 E=@(x,y,z) k*q1/((x-qx)^2 +(y-qy)^2 +(z-qz)^2)^(3/2)*[x-qx, y-qy, z-qz];
 I=[1,0,0]; J=[0,1,0]; K=[0,0,1];
 Eup=dot(K, E(x,y,1));
